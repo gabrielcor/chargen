@@ -1,0 +1,100 @@
+* {
+  touch-action: manipulation;
+}
+
+body {
+  background: linear-gradient(#d2cfd1, #fff);
+  background-attachment: fixed;
+}
+
+#character-generator-container {
+  margin-top: 20px;
+}
+
+.attribute-list {
+  margin: 20px 0;
+}
+
+.column,
+.columns {
+  width: 100%;
+}
+
+label {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+ul li {
+  list-style-type: none;
+  margin: 0;
+}
+
+li.row:hover {
+  background-color: beige;
+}
+
+button {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+button.button-primary,
+button.button-primary:focus {
+  background-color: #0a9ccd;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+/* for mobile widths */
+@media (min-width: 400px) {
+  .column,
+  .columns {
+    width: 50%;
+  }
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+  p {
+    margin-bottom: 1.0em;
+  }
+
+  #character-generator-container {
+    /* background-color: #abd8f3; */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  #character-generator-container > section > header {
+    padding: 10px;
+  }
+
+
+  #character-generator-container > section > header h1 {
+    font-size: 2em;
+    text-transform: uppercase;
+  }
+
+
+  #character-generator-container > section > header h2 {
+    font-size: 1.5em;
+  }
+}
+
+th:last-child,
+td:last-child {
+  width: 50%;
+  max-width: 50%;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgb(252, 250, 250);
+}

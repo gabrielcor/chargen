@@ -1,0 +1,54 @@
+.header {
+  display: inline-flex;
+  text-decoration: underline;
+}
+.idea {
+  border: 1px solid #969494;
+  border-radius: 15px;
+  margin-right: 10px;
+  padding: 1px 10px;
+  margin-bottom: 10px;
+  display: inline-flex;
+}
+
+.ideaTable {
+  margin-bottom: 0;
+}
+
+.icon {
+  color: #0a9ccd;
+  vertical-align: middle;
+  font-size: 2em;
+  margin-left: -6px;
+}
+
+.iconStyle {
+  font-size: 2em;
+  vertical-align: middle;
+  margin-left: -2px;
+  margin-right: 5px;
+  margin-top: -2px;
+}
+
+.areaClick {
+  color: #0a9ccd;
+  cursor: pointer;
+  user-select: none;
+  width: 30%;
+}
+
+.areaClick:hover {
+  text-decoration: underline;
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+
+  .areaClick {
+    width: 50%;
+  }
+}
